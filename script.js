@@ -3,7 +3,7 @@ const addBtn = document.getElementById("input-btn");
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container1");
 
-function addTask() {
+function addTask(){
     if(inputBox.value === ''){
         alert("Please enter something.");
     }
