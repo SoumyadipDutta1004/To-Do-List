@@ -18,7 +18,6 @@ function addTask(){
     }
     saveData();
 }
-
 addBtn.onclick = () => addTask();
 document.onkeydown = (e) => {
     if(e.key === 'Enter'){
