@@ -75,5 +75,6 @@ body{
 .list-container li span{
     position: absolute;
     right: 0;
-    display: block;
+    top: 0;
+/*     display: block; */
 }
