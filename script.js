@@ -3,7 +3,7 @@ const addBtn = document.getElementById("input-btn");
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container1");
 
-addBtn.onclick = () => {
+function addTask() {
     if(inputBox.value === ''){
         alert("Please enter something.");
     }
@@ -17,6 +17,13 @@ addBtn.onclick = () => {
         li.appendChild(deleteBtn);
     }
     saveData();
+}
+
+addBtn.onclick = () => addTask();
+document.onkeydown = (e) => {
+    if(e.key === 'Enter'){
+        addTask();
+    }
 }
 
 listContainer.onclick = (e) => {
