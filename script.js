@@ -18,12 +18,14 @@ function addTask(){
     }
     saveData();
 }
+
 addBtn.onclick = () => addTask();
 document.onkeydown = (e) => {
     if(e.key === 'Enter'){
         addTask();
     }
 }
+
 
 listContainer.onclick = (e) => {
     if(e.target.tagName === 'IMG'){
