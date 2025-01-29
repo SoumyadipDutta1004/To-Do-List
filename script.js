@@ -12,7 +12,7 @@ function addTask(){
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
         inputBox.value = '';
-        const deleteBtn = document.createElement("div");
+        const deleteBtn = document.createElement("span");
         deleteBtn.innerHTML = "<img src=\"images/delete.png\" width=18>";
         li.appendChild(deleteBtn);
     }
